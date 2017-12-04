@@ -1,7 +1,8 @@
 import UIKit
+import SwiftSideMenu
 
-class VerticalSideMenuViewController: UIViewController, Identifiable {
+class VerticalSideMenuViewController: SideMenuViewController, Identifiable {
 }
 
-class HorizontalSideMenuViewController: UIViewController, Identifiable {
+class HorizontalSideMenuViewController: SideMenuViewController, Identifiable {
 }

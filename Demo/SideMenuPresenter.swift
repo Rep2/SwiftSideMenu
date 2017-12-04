@@ -33,7 +33,6 @@ class SideMenuPresenter {
         let viewController = Storyboard.main.viewController() as VerticalSideMenuViewController
 
         viewController.transitioningDelegate = transitioningDelegate
-        viewController.modalPresentationStyle = .custom
 
         return viewController
     }()
@@ -42,7 +41,6 @@ class SideMenuPresenter {
         let viewController = Storyboard.main.viewController() as VerticalSideMenuViewController
 
         viewController.transitioningDelegate = transitioningDelegate
-        viewController.modalPresentationStyle = .custom
 
         return viewController
     }()
@@ -51,7 +49,6 @@ class SideMenuPresenter {
         let viewController = Storyboard.main.viewController() as VerticalSideMenuViewController
 
         viewController.transitioningDelegate = transitioningDelegate
-        viewController.modalPresentationStyle = .custom
 
         return viewController
     }()
@@ -60,7 +57,6 @@ class SideMenuPresenter {
         let viewController = Storyboard.main.viewController() as VerticalSideMenuViewController
 
         viewController.transitioningDelegate = transitioningDelegate
-        viewController.modalPresentationStyle = .custom
 
         return viewController
     }()
@@ -69,7 +65,6 @@ class SideMenuPresenter {
         let viewController = Storyboard.main.viewController() as HorizontalSideMenuViewController
 
         viewController.transitioningDelegate = transitioningDelegate
-        viewController.modalPresentationStyle = .custom
 
         return viewController
     }()
@@ -78,7 +73,6 @@ class SideMenuPresenter {
         let viewController = Storyboard.main.viewController() as HorizontalSideMenuViewController
 
         viewController.transitioningDelegate = transitioningDelegate
-        viewController.modalPresentationStyle = .custom
 
         return viewController
     }()

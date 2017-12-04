@@ -25,6 +25,7 @@
 		F6F40C5A1FD5DA2B00DF9240 /* SwiftSideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F40C081FD5D89500DF9240 /* SwiftSideMenu.framework */; };
 		F6F40C5B1FD5DA2B00DF9240 /* SwiftSideMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6F40C081FD5D89500DF9240 /* SwiftSideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6F40C601FD5DDB600DF9240 /* SegmentedControlWithSelectCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C5F1FD5DDB600DF9240 /* SegmentedControlWithSelectCurrent.swift */; };
+		F6F40C621FD5DFBD00DF9240 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C611FD5DFBD00DF9240 /* SideMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		F6F40C561FD5D9A200DF9240 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		F6F40C571FD5D9A200DF9240 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		F6F40C5F1FD5DDB600DF9240 /* SegmentedControlWithSelectCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlWithSelectCurrent.swift; sourceTree = "<group>"; };
+		F6F40C611FD5DFBD00DF9240 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				F6F40C231FD5D8CC00DF9240 /* TransitionDirection.swift */,
 				F6F40C0B1FD5D89500DF9240 /* SwiftSideMenu.h */,
 				F6F40C0C1FD5D89500DF9240 /* Info.plist */,
+				F6F40C611FD5DFBD00DF9240 /* SideMenuViewController.swift */,
 			);
 			path = SwiftSideMenu;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F40C621FD5DFBD00DF9240 /* SideMenuViewController.swift in Sources */,
 				F6F40C261FD5D8CD00DF9240 /* TransitionDirection.swift in Sources */,
 				F6F40C251FD5D8CD00DF9240 /* SideMenuAnimatedTransitioning.swift in Sources */,
 				F6F40C271FD5D8CD00DF9240 /* SideMenuScreenEdge.swift in Sources */,
