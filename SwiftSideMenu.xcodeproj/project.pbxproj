@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F6F40C121FD5D89500DF9240 /* SwiftSideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F40C081FD5D89500DF9240 /* SwiftSideMenu.framework */; };
 		F6F40C191FD5D89500DF9240 /* SwiftSideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F40C0B1FD5D89500DF9240 /* SwiftSideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6F40C251FD5D8CD00DF9240 /* SideMenuAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C221FD5D8CC00DF9240 /* SideMenuAnimatedTransitioning.swift */; };
+		F6F40C261FD5D8CD00DF9240 /* TransitionDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C231FD5D8CC00DF9240 /* TransitionDirection.swift */; };
+		F6F40C271FD5D8CD00DF9240 /* SideMenuScreenEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C241FD5D8CD00DF9240 /* SideMenuScreenEdge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 		F6F40C0C1FD5D89500DF9240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F40C111FD5D89500DF9240 /* SwiftSideMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSideMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F40C181FD5D89500DF9240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F40C221FD5D8CC00DF9240 /* SideMenuAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		F6F40C231FD5D8CC00DF9240 /* TransitionDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDirection.swift; sourceTree = "<group>"; };
+		F6F40C241FD5D8CD00DF9240 /* SideMenuScreenEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuScreenEdge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 		F6F40C0A1FD5D89500DF9240 /* SwiftSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F6F40C221FD5D8CC00DF9240 /* SideMenuAnimatedTransitioning.swift */,
+				F6F40C241FD5D8CD00DF9240 /* SideMenuScreenEdge.swift */,
+				F6F40C231FD5D8CC00DF9240 /* TransitionDirection.swift */,
 				F6F40C0B1FD5D89500DF9240 /* SwiftSideMenu.h */,
 				F6F40C0C1FD5D89500DF9240 /* Info.plist */,
 			);
@@ -145,6 +154,7 @@
 				TargetAttributes = {
 					F6F40C071FD5D89500DF9240 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					F6F40C101FD5D89500DF9240 = {
@@ -193,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F40C261FD5D8CD00DF9240 /* TransitionDirection.swift in Sources */,
+				F6F40C251FD5D8CD00DF9240 /* SideMenuAnimatedTransitioning.swift in Sources */,
+				F6F40C271FD5D8CD00DF9240 /* SideMenuScreenEdge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +343,7 @@
 		F6F40C1D1FD5D89500DF9240 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -343,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rep.SwiftSideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,6 +366,7 @@
 		F6F40C1E1FD5D89500DF9240 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -372,6 +388,7 @@
 		F6F40C201FD5D89500DF9240 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
 				INFOPLIST_FILE = SwiftSideMenuTests/Info.plist;
@@ -386,6 +403,7 @@
 		F6F40C211FD5D89500DF9240 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
 				INFOPLIST_FILE = SwiftSideMenuTests/Info.plist;
