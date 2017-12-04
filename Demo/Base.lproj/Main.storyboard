@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HVk-NE-H8H">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0f7-N6-pFf" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4zd-l2-ach">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5UI-mk-yGn" customClass="SegmentedControlWithSelectCurrent" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="-70.5" y="319" width="515" height="29"/>
+                                <segments>
+                                    <segment title="Left"/>
+                                    <segment title="Right"/>
+                                    <segment title="Bottom"/>
+                                    <segment title="Top"/>
+                                    <segment title="Left bottom"/>
+                                    <segment title="Right top"/>
+                                </segments>
+                                <connections>
+                                    <action selector="stateSegmentedControlValueChanged:" destination="0f7-N6-pFf" eventType="valueChanged" id="n9q-TP-cyS"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5UI-mk-yGn" firstAttribute="centerY" secondItem="4zd-l2-ach" secondAttribute="centerY" id="YG3-do-0Yl"/>
+                            <constraint firstItem="5UI-mk-yGn" firstAttribute="centerX" secondItem="4zd-l2-ach" secondAttribute="centerX" id="kKI-Lc-eT0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hU1-pU-V8r"/>
+                    </view>
+                    <connections>
+                        <outlet property="stateSegmentedControl" destination="5UI-mk-yGn" id="cTo-zy-Cyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3CP-1x-9AY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-305" y="60"/>
+        </scene>
+        <!--Vertical Side Menu View Controller-->
+        <scene sceneID="ufL-QX-kRK">
+            <objects>
+                <viewController storyboardIdentifier="VerticalSideMenuViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Z5-a3-WQZ" customClass="VerticalSideMenuViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RzP-eN-3ak">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2Sl-NM-dbm"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="600"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYb-vh-SpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="45"/>
+        </scene>
+        <!--Horizontal Side Menu View Controller-->
+        <scene sceneID="ssF-Yu-fhj">
+            <objects>
+                <viewController storyboardIdentifier="HorizontalSideMenuViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hSc-R4-dv7" customClass="HorizontalSideMenuViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yh0-rn-4xG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2EP-X3-qlf"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="600" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4AE-B9-jxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096" y="59"/>
+        </scene>
+    </scenes>
+</document>

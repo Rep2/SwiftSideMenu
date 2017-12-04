@@ -1,21 +1,21 @@
 import UIKit
 
-class SideMenuAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
+public class SideMenuAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
     let screenEdge: SideMenuScreenEdge
     let direction: TransitionDirection
     let transitionDuration: Double
 
-    init(screenEdge: SideMenuScreenEdge, direction: TransitionDirection, transitionDuration: Double = 0.3) {
+    public init(screenEdge: SideMenuScreenEdge, direction: TransitionDirection, transitionDuration: Double = 0.3) {
         self.screenEdge = screenEdge
         self.direction = direction
         self.transitionDuration = transitionDuration
     }
 
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return transitionDuration
     }
 
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         guard let fromViewController = transitionContext.viewController(forKey: .from),
             let toViewController = transitionContext.viewController(forKey: .to) else {
                 return

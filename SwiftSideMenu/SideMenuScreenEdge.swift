@@ -1,6 +1,6 @@
 import UIKit
 
-enum SideMenuScreenEdge {
+public enum SideMenuScreenEdge {
     case left
     case right
     case top
