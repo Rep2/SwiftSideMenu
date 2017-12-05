@@ -18,10 +18,11 @@ extension ViewController: UIViewControllerTransitioningDelegate {
 }
 ```
 
-Set `transitioningDelegate` on presented `ViewController`.
+Set `modalPresentationStyle = .custom` `transitioningDelegate` on presented `ViewController`.
 
 ```Swift
 viewController.transitioningDelegate = transitioningDelegate // Your UIViewControllerTransitioningDelegate implementation
+viewController.modalPresentationStyle = .custom
 ```
 
 Present/dismiss `ViewController`.
