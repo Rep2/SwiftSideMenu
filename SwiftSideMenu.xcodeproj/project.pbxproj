@@ -16,7 +16,6 @@
 		F6F40C341FD5D91200DF9240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F40C321FD5D91200DF9240 /* Main.storyboard */; };
 		F6F40C361FD5D91200DF9240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F40C351FD5D91200DF9240 /* Assets.xcassets */; };
 		F6F40C391FD5D91200DF9240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F40C371FD5D91200DF9240 /* LaunchScreen.storyboard */; };
-		F6F40C441FD5D91200DF9240 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C431FD5D91200DF9240 /* DemoTests.swift */; };
 		F6F40C511FD5D96700DF9240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C4C1FD5D96700DF9240 /* ViewController.swift */; };
 		F6F40C521FD5D96700DF9240 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C4E1FD5D96700DF9240 /* SideMenuViewController.swift */; };
 		F6F40C531FD5D96700DF9240 /* SideMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F40C4F1FD5D96700DF9240 /* SideMenuPresenter.swift */; };
@@ -82,7 +81,6 @@
 		F6F40C381FD5D91200DF9240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6F40C3A1FD5D91200DF9240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F40C3F1FD5D91200DF9240 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6F40C431FD5D91200DF9240 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		F6F40C451FD5D91200DF9240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F40C4C1FD5D96700DF9240 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6F40C4E1FD5D96700DF9240 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 		F6F40C421FD5D91200DF9240 /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6F40C431FD5D91200DF9240 /* DemoTests.swift */,
 				F6F40C451FD5D91200DF9240 /* Info.plist */,
 			);
 			path = DemoTests;
@@ -227,6 +224,7 @@
 				F6F40C041FD5D89500DF9240 /* Frameworks */,
 				F6F40C051FD5D89500DF9240 /* Headers */,
 				F6F40C061FD5D89500DF9240 /* Resources */,
+				F6503B0F2000CAF300FE8E14 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -377,6 +375,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6503B0F2000CAF300FE8E14 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6F40C031FD5D89500DF9240 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -414,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F40C441FD5D91200DF9240 /* DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

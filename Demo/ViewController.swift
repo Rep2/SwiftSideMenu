@@ -12,7 +12,10 @@ class ViewController: UIViewController, Identifiable {
 }
 
 extension ViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(
+        forPresented presented: UIViewController,
+        presenting: UIViewController,
+        source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return sideMenuPresenter
             .screenEdge
             .flatMap { SideMenuAnimatedTransitioning(screenEdge: $0, direction: .present) }
