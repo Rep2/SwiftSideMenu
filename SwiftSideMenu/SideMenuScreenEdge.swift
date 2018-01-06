@@ -10,18 +10,18 @@ public enum SideMenuScreenEdge {
     case rightBottom
     case rightTop
 
-    func addSubviews(fromView: UIView, toView: UIView, containerView: UIView) {
+    public func addSubviews(fromView: UIView, toView: UIView, containerView: UIView) {
         containerView.addSubview(fromView)
         containerView.addSubview(toView)
     }
 
-    func setPositionBeforeAnimation(fromView: UIView, toView: UIView, direction: TransitionDirection) {
+    public func setPositionBeforeAnimation(fromView: UIView, toView: UIView, direction: TransitionDirection) {
         toView.frame = direction == .present ?
             positionDismissed(fromView: fromView, toView: toView) :
             positionPresented(fromView: fromView, toView: toView)
     }
 
-    func setPositionAfterAnimation(fromView: UIView, toView: UIView, direction: TransitionDirection) {
+    public func setPositionAfterAnimation(fromView: UIView, toView: UIView, direction: TransitionDirection) {
         toView.frame = direction == .present ?
             positionPresented(fromView: fromView, toView: toView) :
             positionDismissed(fromView: fromView, toView: toView)
