@@ -9,6 +9,8 @@ public enum SideMenuScreenEdge {
     case leftTop
     case rightBottom
     case rightTop
+    case bottomLeft
+    case bottomRight
 
     public func addSubviews(fromView: UIView, toView: UIView, containerView: UIView) {
         containerView.addSubview(fromView)
@@ -53,6 +55,10 @@ public enum SideMenuScreenEdge {
             return fromView.frame.maxX
         case .top, .bottom:
             return fromView.frame.minX + (fromView.frame.width - toView.frame.width) / 2
+        case .bottomLeft:
+            return 0
+        case .bottomRight:
+            return fromView.frame.maxX - toView.frame.width
         }
     }
 
@@ -62,7 +68,7 @@ public enum SideMenuScreenEdge {
             return fromView.frame.minY + (fromView.frame.height - toView.frame.height) / 2
         case .top:
             return fromView.frame.minY - toView.frame.height
-        case .bottom:
+        case .bottom, .bottomLeft, .bottomRight:
             return fromView.frame.maxY
         case .leftBottom, .rightBottom:
             return fromView.frame.minY + (fromView.frame.height - toView.frame.height)
@@ -79,6 +85,10 @@ public enum SideMenuScreenEdge {
             return fromView.frame.maxX - toView.frame.width
         case .top, .bottom:
             return fromView.frame.minX + (fromView.frame.width - toView.frame.width) / 2
+        case .bottomLeft:
+            return 0
+        case .bottomRight:
+            return fromView.frame.maxX - toView.frame.width
         }
     }
 
@@ -88,7 +98,7 @@ public enum SideMenuScreenEdge {
             return fromView.frame.minY + (fromView.frame.height - toView.frame.height) / 2
         case .top:
             return fromView.frame.minY
-        case .bottom:
+        case .bottom, .bottomLeft, .bottomRight:
             return fromView.frame.maxY - toView.frame.height
         case .leftBottom, .rightBottom:
             return fromView.frame.minY + (fromView.frame.height - toView.frame.height)
